@@ -22,16 +22,16 @@ function App() {
     }, [isNight])
 
     return (
-        <div className="container">
+        <div className="container w-full h-full text-black dark:text-white">
         <Navbar />
         <ThemeToggler isNight = { isNight } setIsNight = { setIsNight } />
-        <section id='home' className='bg-bgDark w-screen h-screen'>
+        <section id='home' className='bg-bgLight dark:bg-bgDark w-screen h-screen'>
             Ciao
         </section>
-        <section id='home' className='bg-bgDark w-screen h-screen'>
+        <section id='home' className='bg-bgLight dark:bg-bgDark w-screen h-screen'>
             Ciao
         </section>
-        <section id='home' className='bg-bgDark w-screen h-screen'>
+        <section id='home' className='bg-bgLight dark:bg-bgDark w-screen h-screen'>
             Ciao
         </section>
         </div>

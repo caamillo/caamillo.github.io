@@ -11,7 +11,10 @@ module.exports = {
     colors: {
       transparent: 'transparent',
       white: '#fff',
-      bgDark: 'var(--bgDark)'
+      black: '#000',
+      bgDark: 'var(--bgDark)',
+      bgLight: 'var(--bgLight)',
+      blurple: 'var(--blurple)',
     },
     fontFamily: {
       'radiocanada': ['Radio Canada', 'sans-serif'],

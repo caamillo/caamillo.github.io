@@ -15,8 +15,8 @@ function ThemeToggler({ isNight, setIsNight }) {
 
     return(
         <div className="theme-toggler fixed right-0 bottom-0 m-5">
-            <button type='button' onClick={ () => setIsNight(!isNight) } className="w-[50px] h-[50px] flex items-center justify-center text-bgDark bg-white border-2 border-bgDark rounded-md outline outline-2 outline-white">
-                <IconTheme fill="#000" className="w-6" />
+            <button type='button' onClick={ () => setIsNight(!isNight) } className="w-[50px] h-[50px] flex items-center justify-center text-bgDark bg-blurple border-2 border-bgLight dark:border-bgDark rounded-md outline outline-2 outline-blurple">
+                <IconTheme className = "w-6" />
             </button>
         </div>
     )
