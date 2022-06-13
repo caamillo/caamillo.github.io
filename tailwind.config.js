@@ -10,7 +10,8 @@ module.exports = {
     },
     colors: {},
     fontFamily: {
-      'radiocanada': ['Radio Canada', 'sans-serif']
+      'radiocanada': ['Radio Canada', 'sans-serif'],
+      'roboto': ['Roboto', 'sans-serif']
     }
   },
   plugins: [
