@@ -541,6 +541,18 @@ video {
   position: fixed;
 }
 
+.right-0 {
+  right: 0px;
+}
+
+.bottom-0 {
+  bottom: 0px;
+}
+
+.m-5 {
+  margin: 1.25rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -558,12 +570,28 @@ video {
   height: 100vh;
 }
 
+.h-\[50px\] {
+  height: 50px;
+}
+
+.h-full {
+  height: 100%;
+}
+
 .w-screen {
   width: 100vw;
 }
 
 .w-full {
   width: 100%;
+}
+
+.w-\[50px\] {
+  width: 50px;
+}
+
+.w-6 {
+  width: 1.5rem;
 }
 
 .max-w-xl {
@@ -576,10 +604,6 @@ video {
 
 .justify-center {
   justify-content: center;
-}
-
-.justify-between {
-  justify-content: space-between;
 }
 
 .justify-around {
@@ -596,23 +620,29 @@ video {
   overflow-x: hidden;
 }
 
-.bg-\[\#121212\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(18 18 18 / var(--tw-bg-opacity));
+.rounded-md {
+  border-radius: 0.375rem;
 }
 
-.bg-\[\#bbb\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(187 187 187 / var(--tw-bg-opacity));
+.border-2 {
+  border-width: 2px;
 }
 
-.bg-\[\#ccc\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(204 204 204 / var(--tw-bg-opacity));
+.border-bgDark {
+  border-color: var(--bgDark);
+}
+
+.bg-bgDark {
+  background-color: var(--bgDark);
 }
 
 .bg-\[\#20202380\] {
   background-color: #20202380;
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .py-3 {
@@ -625,12 +655,12 @@ video {
   padding-right: 2.5rem;
 }
 
-.font-radiocanada {
-  font-family: Radio Canada, sans-serif;
-}
-
 .font-roboto {
   font-family: Roboto, sans-serif;
+}
+
+.font-radiocanada {
+  font-family: Radio Canada, sans-serif;
 }
 
 .text-xl {
@@ -642,17 +672,25 @@ video {
   font-weight: 100;
 }
 
-.font-medium {
-  font-weight: 500;
-}
-
-.font-normal {
-  font-weight: 400;
-}
-
-.text-\[\#fff\] {
+.text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-bgDark {
+  color: var(--bgDark);
+}
+
+.outline {
+  outline-style: solid;
+}
+
+.outline-2 {
+  outline-width: 2px;
+}
+
+.outline-white {
+  outline-color: #fff;
 }
 
 .backdrop-blur {
@@ -661,7 +699,16 @@ video {
           backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
+:root {
+  --bgDark: #121212;
+  --bgLight: #fafafa;
+}
+
 .hover\:text-\[\#fff\]\/80:hover {
+  color: rgb(255 255 255 / 0.8);
+}
+
+.hover\:text-white\/80:hover {
   color: rgb(255 255 255 / 0.8);
 }
 

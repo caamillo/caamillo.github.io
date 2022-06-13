@@ -8,7 +8,11 @@ module.exports = {
       lg: '976px',
       xl: '1440px'
     },
-    colors: {},
+    colors: {
+      transparent: 'transparent',
+      white: '#fff',
+      bgDark: 'var(--bgDark)'
+    },
     fontFamily: {
       'radiocanada': ['Radio Canada', 'sans-serif'],
       'roboto': ['Roboto', 'sans-serif']
