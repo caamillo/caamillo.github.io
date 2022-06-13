@@ -15,6 +15,8 @@ module.exports = {
       bgDark: 'var(--bgDark)',
       bgLight: 'var(--bgLight)',
       blurple: 'var(--blurple)',
+      menuDark: 'var(--menuDark)',
+      menuLight: 'var(--menuLight)',
     },
     fontFamily: {
       'radiocanada': ['Radio Canada', 'sans-serif'],

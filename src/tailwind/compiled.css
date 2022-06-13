@@ -562,10 +562,6 @@ video {
   margin-right: auto;
 }
 
-.mt-2 {
-  margin-top: 0.5rem;
-}
-
 .flex {
   display: flex;
 }
@@ -574,24 +570,32 @@ video {
   display: none;
 }
 
+.h-full {
+  height: 100%;
+}
+
 .h-screen {
   height: 100vh;
+}
+
+.h-\[25px\] {
+  height: 25px;
 }
 
 .h-\[50px\] {
   height: 50px;
 }
 
-.h-full {
-  height: 100%;
+.w-full {
+  width: 100%;
 }
 
 .w-screen {
   width: 100vw;
 }
 
-.w-full {
-  width: 100%;
+.w-\[25px\] {
+  width: 25px;
 }
 
 .w-\[50px\] {
@@ -606,16 +610,8 @@ video {
   max-width: 36rem;
 }
 
-.flex-row {
-  flex-direction: row;
-}
-
 .flex-col {
   flex-direction: column;
-}
-
-.items-end {
-  align-items: flex-end;
 }
 
 .items-center {
@@ -664,21 +660,8 @@ video {
   background-color: var(--blurple);
 }
 
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#ffffff80\] {
-  background-color: #ffffff80;
-}
-
-.bg-\[\#20202380\] {
-  background-color: #20202380;
-}
-
-.bg-white\/80 {
-  background-color: rgb(255 255 255 / 0.8);
+.bg-menuLight {
+  background-color: var(--menuLight);
 }
 
 .py-3 {
@@ -686,13 +669,8 @@ video {
   padding-bottom: 0.75rem;
 }
 
-.px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-}
-
-.pt-1 {
-  padding-top: 0.25rem;
+.text-center {
+  text-align: center;
 }
 
 .font-roboto {
@@ -712,18 +690,13 @@ video {
   font-weight: 100;
 }
 
-.text-bgDark {
-  color: var(--bgDark);
-}
-
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.text-bgDark {
+  color: var(--bgDark);
 }
 
 .outline {
@@ -738,12 +711,6 @@ video {
   outline-color: var(--blurple);
 }
 
-.backdrop-blur {
-  --tw-backdrop-blur: blur(8px);
-  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
-          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
-}
-
 .backdrop-blur-sm {
   --tw-backdrop-blur: blur(4px);
   -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
@@ -754,22 +721,33 @@ video {
   --bgDark: #121212;
   --bgLight: #F0E7DB;
   --blurple: #736CED;
+  --menuDark: #20202380;
+  --menuLight: #FFFFFF30;
 }
 
-.hover\:text-\[\#fff\]\/80:hover {
-  color: rgb(255 255 255 / 0.8);
+.hover\:bg-white:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.hover\:text-white\/80:hover {
-  color: rgb(255 255 255 / 0.8);
-}
-
-.hover\:text-black\/80:hover {
-  color: rgb(0 0 0 / 0.8);
+.hover\:bg-menuDark:hover {
+  background-color: var(--menuDark);
 }
 
 .hover\:text-black\/50:hover {
   color: rgb(0 0 0 / 0.5);
+}
+
+.child\:h-full > * {
+  height: 100%;
+}
+
+.child\:w-full > * {
+  width: 100%;
+}
+
+.child\:p-4 > * {
+  padding: 1rem;
 }
 
 .dark .dark\:border-bgDark {
@@ -784,21 +762,23 @@ video {
   background-color: #20202380;
 }
 
+.dark .dark\:bg-menuDark {
+  background-color: var(--menuDark);
+}
+
 .dark .dark\:text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.dark .dark\:hover\:text-black\/80:hover {
-  color: rgb(0 0 0 / 0.8);
 }
 
 .dark .dark\:hover\:text-white\/80:hover {
   color: rgb(255 255 255 / 0.8);
 }
 
-.dark .dark\:hover\:text-white\/50:hover {
-  color: rgb(255 255 255 / 0.5);
+@media (min-width: 480px) {
+  .sm\:block {
+    display: block;
+  }
 }
 
 @media (min-width: 800px) {
@@ -806,8 +786,11 @@ video {
     display: inline;
   }
 
-  .md\:px-0 {
-    padding-left: 0px;
-    padding-right: 0px;
+  .md\:hidden {
+    display: none;
+  }
+
+  .md\:items-end {
+    align-items: flex-end;
   }
 }
