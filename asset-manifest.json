@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Diasky/portfolio/static/css/main.ba85d772.css",
-    "main.js": "/Diasky/portfolio/static/js/main.810348b6.js",
-    "index.html": "/Diasky/portfolio/index.html",
-    "static/media/sun.svg": "/Diasky/portfolio/static/media/sun.4871eeaf6b645d42970eded555c41aae.svg",
-    "static/media/moon.svg": "/Diasky/portfolio/static/media/moon.b3fb5ad58c2f04355fc6d69c0d552198.svg",
-    "static/media/bars.svg": "/Diasky/portfolio/static/media/bars.718d76d7e06d0f7645d27114c124d363.svg",
-    "main.ba85d772.css.map": "/Diasky/portfolio/static/css/main.ba85d772.css.map",
-    "main.810348b6.js.map": "/Diasky/portfolio/static/js/main.810348b6.js.map"
+    "main.css": "/portfolio/static/css/main.ba85d772.css",
+    "main.js": "/portfolio/static/js/main.c30dec87.js",
+    "index.html": "/portfolio/index.html",
+    "static/media/sun.svg": "/portfolio/static/media/sun.4871eeaf6b645d42970eded555c41aae.svg",
+    "static/media/moon.svg": "/portfolio/static/media/moon.b3fb5ad58c2f04355fc6d69c0d552198.svg",
+    "static/media/bars.svg": "/portfolio/static/media/bars.718d76d7e06d0f7645d27114c124d363.svg",
+    "main.ba85d772.css.map": "/portfolio/static/css/main.ba85d772.css.map",
+    "main.c30dec87.js.map": "/portfolio/static/js/main.c30dec87.js.map"
   },
   "entrypoints": [
     "static/css/main.ba85d772.css",
-    "static/js/main.810348b6.js"
+    "static/js/main.c30dec87.js"
   ]
 }
