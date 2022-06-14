@@ -7,7 +7,7 @@ import { ReactComponent as Bars } from '../../icons/bars.svg'
 // Components
 import { Options, openOptions, closeOptions } from './Options'
 
-function Navbar() {
+function Navbar({ isNight }) {
 
     const [isOpen, setIsOpen] = useState(false)
 
@@ -19,19 +19,20 @@ function Navbar() {
     }, [isOpen])
 
     return (
-        <div className="nav-container">
-            <nav className='fixed w-full bg-menuLight dark:bg-menuDark backdrop-blur-sm font-roboto z-10'>
-                <div className='flex md:block w-full max-w-xl mx-auto py-3 items-center md:items-end justify-around text-center md:space-y-2'>
-                    <div className="logo">
-                    <a href="#" className='text-xl md:text-3xl'>Camillo <span className="font-thin">Portfolio</span></a>
-                </div>
-                <div className="pages font-thin space-x-6 child:transition child:ease-in-out child:delay-50">
-                    <a href='#' className='md:inline hidden hover:text-black/50 dark:hover:text-white/80'>Home</a>
-                    <a href='#' className="md:inline hidden hover:text-black/50 dark:hover:text-white/80">Works</a>
-                </div>
-                <button id='btnMenu' onClick={ () => setIsOpen(!isOpen) } className="sm:block md:hidden w-[25px] h-[25px]">
-                    <Bars fill = { true ? '#ffffff90' :' #ffffff90' } />
-                </button>
+        <div className = "nav-container md:sticky md:top-0">
+            <nav className = 'fixed md:static w-screen bg-menuLight dark:bg-menuDark backdrop-blur-sm font-roboto z-10'>
+                <div className = 'flex md:block w-full max-w-xl mx-auto p-4 items-center md:items-end justify-around text-center'>
+                    <div className="logo md:hidden w-screen font-roboto z-10">
+                        <a href = "#" className = 'text-xl md:text-5xl'>Camillo <span className = "font-thin">Portfolio</span></a>
+                    </div>
+                    <div className="pages space-x-10 child:transition child:ease-in-out child:delay-50 font-normal font-radiocanada">
+                        <a href = '#' className = "md:inline hidden hover:text-black/50 dark:hover:text-white/80">Home</a>
+                        <a href = '#' className = "md:inline hidden hover:text-black/50 dark:hover:text-white/80">Works</a>
+                        <a href = '#' className = "md:inline hidden hover:text-black/50 dark:hover:text-white/80">Contact</a>
+                    </div>
+                    <button id = 'btnMenu' onClick = { () => setIsOpen(!isOpen) } className = "sm:block md:hidden w-[25px] h-[25px]">
+                        <Bars fill = { isNight ? '#ffffff90' :' #00000090' } />
+                    </button>
                 </div>
             </nav>
             <Options btnMenu = { document.getElementById('btnMenu') } />
