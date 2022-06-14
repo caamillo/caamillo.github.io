@@ -1,3 +1,6 @@
 ::-webkit-scrollbar {
     display: none;
 }
+* {
+    scroll-margin-top: 60px;
+}
