@@ -1,5 +1,5 @@
 // React
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 
 // Icons
 import { ReactComponent as Bars } from '../../icons/bars.svg'
@@ -10,13 +10,6 @@ import { Options, openOptions, closeOptions } from './Options'
 function Navbar({ isNight }) {
 
     const [isOpen, setIsOpen] = useState(false)
-
-    useEffect(() => {
-        ;(async () => {
-            if (isOpen) await openOptions()
-            else await closeOptions()
-        })()
-    }, [isOpen])
 
     return (
         <div className = "nav-container md:sticky md:top-0">
@@ -30,12 +23,12 @@ function Navbar({ isNight }) {
                         <button onClick = { () => document.getElementById('works').scrollIntoView({ behavior: 'smooth' }) } className = "md:inline hidden hover:text-black/50 dark:hover:text-white/80">Works</button>
                         <button onClick = { () => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' }) } className = "md:inline hidden hover:text-black/50 dark:hover:text-white/80">Contact</button>
                     </div>
-                    <button id = 'btnMenu' onClick = { () => setIsOpen(!isOpen) } className = "absolute right-0 mr-4 sm:block md:hidden w-[25px] h-[25px] z-10">
+                    <button id = 'btnMenu' onClick = { async () => isOpen ? await closeOptions() : await openOptions() } className = "absolute right-0 mr-4 sm:block md:hidden w-[25px] h-[25px] z-10">
                         <Bars fill = { isNight ? '#ffffff90' :' #00000090' } />
                     </button>
                 </div>
             </nav>
-            <Options btnMenu = { document.getElementById('btnMenu') } />
+            <Options isOpen = { isOpen } setIsOpen = { setIsOpen } />
         </div>
     )
 }
