@@ -57,10 +57,7 @@ function Options({ btnMenuOutside, isOpen, setIsOpen }) {
     setIsOpenOutside = setIsOpen
 
     useEffect(() => {
-        const closeMenu = () => {
-            const options = document.getElementById('options')
-            if (isOpen) closeOptions()
-        }
+        const closeMenu = () => isOpen ? closeOptions() : null
         window.addEventListener('click', closeMenu)
         return () => window.removeEventListener('click', closeMenu)
     })
