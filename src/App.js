@@ -24,12 +24,11 @@ function App() {
 
     return (
         <div className="container w-screen h-full text-black dark:text-white">
-            <div className="logo md:block hidden text-center pt-4 w-screen dark:bg-menuDark backdrop-blur-sm font-roboto z-10">
+            <div className="logo md:block hidden text-center pt-4 w-screen bg-menuLight dark:bg-menuDark backdrop-blur-sm font-roboto z-10">
                 <a href = "#" className = 'text-xl md:text-5xl'>Camillo <span className = "font-thin">Portfolio</span></a>
             </div>
             <Navbar isNight = { isNight } />
             <ThemeToggler isNight = { isNight } setIsNight = { setIsNight } />
-            <div className="divider h-[60px]">&nbsp;</div>
             <section id='home' className='bg-bgLight dark:bg-bgDark w-screen h-screen'>
                 ciao
             </section>
