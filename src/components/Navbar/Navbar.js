@@ -30,7 +30,7 @@ function Navbar({ isNight }) {
                         <button onClick = { () => document.getElementById('works').scrollIntoView({ behavior: 'smooth' }) } className = "md:inline hidden hover:text-black/50 dark:hover:text-white/80">Works</button>
                         <button onClick = { () => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' }) } className = "md:inline hidden hover:text-black/50 dark:hover:text-white/80">Contact</button>
                     </div>
-                    <button id = 'btnMenu' onClick = { () => setIsOpen(!isOpen) } className = "sm:block md:hidden w-[25px] h-[25px]">
+                    <button id = 'btnMenu' onClick = { () => setIsOpen(!isOpen) } className = "absolute right-0 mr-4 sm:block md:hidden w-[25px] h-[25px] z-10">
                         <Bars fill = { isNight ? '#ffffff90' :' #00000090' } />
                     </button>
                 </div>

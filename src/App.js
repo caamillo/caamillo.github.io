@@ -29,6 +29,7 @@ function App() {
             </div>
             <Navbar isNight = { isNight } />
             <ThemeToggler isNight = { isNight } setIsNight = { setIsNight } />
+            <div className="mobile-divider h-[60px] md:hidden"></div>
             <section id='home' className='bg-bgLight dark:bg-bgDark w-screen h-screen'>
                 ciao
             </section>
