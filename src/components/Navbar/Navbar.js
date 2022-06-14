@@ -26,9 +26,9 @@ function Navbar({ isNight }) {
                         <a href = "#" className = 'text-xl md:text-5xl'>Camillo <span className = "font-thin">Portfolio</span></a>
                     </div>
                     <div className="pages space-x-10 child:transition child:ease-in-out child:delay-50 font-normal font-radiocanada">
-                        <a href = '#' className = "md:inline hidden hover:text-black/50 dark:hover:text-white/80">Home</a>
-                        <a href = '#' className = "md:inline hidden hover:text-black/50 dark:hover:text-white/80">Works</a>
-                        <a href = '#' className = "md:inline hidden hover:text-black/50 dark:hover:text-white/80">Contact</a>
+                        <button onClick = { () => document.getElementById('home').scrollIntoView({ behavior: 'smooth' }) } className = "md:inline hidden hover:text-black/50 dark:hover:text-white/80">Home</button>
+                        <button onClick = { () => document.getElementById('works').scrollIntoView({ behavior: 'smooth' }) } className = "md:inline hidden hover:text-black/50 dark:hover:text-white/80">Works</button>
+                        <button onClick = { () => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' }) } className = "md:inline hidden hover:text-black/50 dark:hover:text-white/80">Contact</button>
                     </div>
                     <button id = 'btnMenu' onClick = { () => setIsOpen(!isOpen) } className = "sm:block md:hidden w-[25px] h-[25px]">
                         <Bars fill = { isNight ? '#ffffff90' :' #00000090' } />

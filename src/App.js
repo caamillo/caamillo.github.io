@@ -29,13 +29,14 @@ function App() {
             </div>
             <Navbar isNight = { isNight } />
             <ThemeToggler isNight = { isNight } setIsNight = { setIsNight } />
+            <div className="divider h-[60px]">&nbsp;</div>
             <section id='home' className='bg-bgLight dark:bg-bgDark w-screen h-screen'>
+                ciao
+            </section>
+            <section id='works' className='bg-bgLight dark:bg-bgDark w-screen h-screen'>
                 Ciao
             </section>
-            <section id='home' className='bg-bgLight dark:bg-bgDark w-screen h-screen'>
-                Ciao
-            </section>
-            <section id='home' className='bg-bgLight dark:bg-bgDark w-screen h-screen'>
+            <section id='contact' className='bg-bgLight dark:bg-bgDark w-screen h-screen'>
                 Ciao
             </section>
         </div>
