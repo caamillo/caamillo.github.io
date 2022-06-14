@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react'
 import './tailwind/tailwind.css'
 
 // Components
-import Navbar from './components/Navbar'
+import Navbar from './components/Navbar/Navbar'
 import ThemeToggler from './components/ThemeToggler'
 
 // CSS
@@ -18,6 +18,7 @@ function App() {
     useEffect(() => {
         if (isNight) document.documentElement.classList.add('dark')
         else document.documentElement.classList.remove('dark')
+        
         localStorage.setItem('darkmode', isNight)
     }, [isNight])
 
@@ -38,4 +39,4 @@ function App() {
     );
 }
 
-export default App;
+export default App
