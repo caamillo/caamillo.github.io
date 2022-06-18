@@ -7,12 +7,16 @@ import { ReactComponent as Bars } from '../../icons/bars.svg'
 // Components
 import { Options, openOptions, closeOptions } from './Options'
 
-function Navbar({ isNight }) {
+// Hooks
+import useNight from '../../hooks/useNight'
+
+function Navbar() {
 
     const [isOpen, setIsOpen] = useState(false)
+    const [isNight, setIsNight] = useNight(false)
 
     return (
-        <div className = "nav-container md:sticky md:top-0">
+        <div className = "md:sticky md:top-0 text-black dark:text-white">
             <nav className = 'fixed md:static w-screen bg-menuLight dark:bg-menuDark backdrop-blur-sm font-roboto z-10'>
                 <div className = 'flex md:block w-full max-w-xl mx-auto p-4 items-center md:items-end justify-around text-center'>
                     <div className="logo md:hidden w-screen font-roboto z-10">
