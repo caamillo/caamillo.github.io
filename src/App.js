@@ -15,6 +15,7 @@ import './css/scrollbar.css'
 
 // Icons
 import { ReactComponent as Download } from './icons/download.svg'
+import { ReactComponent as Plane } from './icons/plane.svg'
 
 // CVS
 import darkcv from './imgs/cvs/darkcv.png'
@@ -29,6 +30,9 @@ function App() {
             <ThemeToggler isNight = { isNight } setIsNight = { setIsNight } />
             <div className="mobile-divider h-[60px] md:hidden"></div>
             <section id='home' className='bg-bgLight dark:bg-bgDark w-screen h-screen'>
+                <div className="plane-animation absolute top-[450px] right-[350px] hidden">
+                    <Plane fill = { isNight ? '#fff' : '#000' } className = '-rotate-45 w-[30px]'/>
+                </div>
                 <section className='h-[calc(100vh-60px)] md:h-[calc(100vh-120px)] flex items-center justify-center'>
                     <div className='text-3xl md:text-5xl font-roboto font-thin text-center mb-10 space-y-5'>
                         <div className="welcome">
