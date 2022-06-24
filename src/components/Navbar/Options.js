@@ -11,6 +11,7 @@ function openOptions() {
         if (isOpenOutside || btnMenu.disabled) return reject(null)
 
         options.style.display = 'flex'
+        options.style.backdropFilter = 'blur(12px)'
         btnMenu.disabled = true
 
         options.animate(
@@ -63,7 +64,7 @@ function Options({ btnMenuOutside, isOpen, setIsOpen }) {
     })
 
     return (
-        <div className="options md:hidden top-[60px] fixed w-full font-roboto backdrop-blur-sm">
+        <div className="options md:hidden top-[60px] fixed w-full font-roboto z-10">
             <ul id='options' className="hidden flex-col font-thin text-center bg-menuLight dark:bg-menuDark child:p-4 child:w-full child:h-full child:transition child:ease-in-out child:delay-50">
                 <li onClick = { () => document.getElementById('home').scrollIntoView({ behavior: 'smooth' }) } className='hover:bg-menuLight dark:hover:bg-menuDark'>Home</li>
                 <li onClick = { () => document.getElementById('works').scrollIntoView({ behavior: 'smooth' }) } className='hover:bg-menuLight dark:hover:bg-menuDark'>Works</li>

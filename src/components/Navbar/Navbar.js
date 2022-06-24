@@ -17,7 +17,7 @@ function Navbar() {
 
     return (
         <div className = "md:sticky md:top-0 text-black dark:text-white z-10">
-            <nav className = 'fixed md:static w-screen bg-menuLight dark:bg-menuDark backdrop-blur-md font-roboto'>
+            <nav className = 'fixed md:static w-screen bg-menuLight dark:bg-menuDark backdrop-blur-md font-roboto z-10'>
                 <div className = 'flex md:block w-full max-w-xl mx-auto p-4 items-center md:items-end justify-around text-center'>
                     <div className="logo md:hidden w-screen font-roboto z-10">
                         <a href = "#" className = 'text-xl md:text-5xl'>Camillo <span className = "font-thin">Portfolio</span></a>
