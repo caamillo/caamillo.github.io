@@ -5,10 +5,7 @@ import { useState, useEffect } from 'react'
 import './tailwind/tailwind.css'
 
 // Components
-import ThemeToggler from './components/ThemeToggler'
-
-// Hooks
-import useNight from './hooks/useNight'
+import { ThemeToggler } from './components/ThemeToggler'
 
 // CSS
 import './css/scrollbar.css'
@@ -21,9 +18,10 @@ import { ReactComponent as Plane } from './icons/plane.svg'
 import darkcv from './imgs/cvs/darkcv.png'
 import lightcv from './imgs/cvs/lightcv.png'
 
-function App() {
+// Utils
+import getNight from './utils/getNight'
 
-    const [isNight, setIsNight] = useNight()
+function App() {
     const [isFlying, setIsFlying] = useState(false)
 
     useEffect(() => {
@@ -61,7 +59,7 @@ function App() {
 
     return (
         <div className="container w-screen h-full">
-            <ThemeToggler isNight = { isNight } setIsNight = { setIsNight } />
+            <ThemeToggler/>
             <div className="mobile-divider h-[60px] md:hidden"></div>
             <section id='home' className='bg-bgLight dark:bg-bgDark w-screen h-screen'>
                 <section className='h-[calc(100vh-60px)] md:h-[calc(100vh-120px)] flex items-center justify-center'>
@@ -70,10 +68,10 @@ function App() {
                             <p>Hello, I'm Camillo.</p>
                             <p>I'm a <a id='dreamaviator' className='font-normal'>Dream Aviator</a>.</p>
                             <div id='plane' className="plane-animation absolute top-[10px] md:top-[20px] right-0 opacity-0">
-                                <Plane fill = { isNight ? '#fff' : '#000' } className = '-rotate-45 w-[30px]'/>
+                                <Plane fill = { getNight() ? '#fff' : '#000' } className = '-rotate-45 w-[30px]'/>
                             </div>
                         </div>
-                        <a download = { isNight ? 'camillo-darkcv' : 'camillo-lightcv' } href = { isNight ? darkcv : lightcv } className="block text-xl p-2 text-white font-normal bg-blurple border-2 border-bgLight dark:border-bgDark rounded-md shadow-[0_0_0_2px_var(--blurple)]">
+                        <a download = { getNight() ? 'camillo-darkcv' : 'camillo-lightcv' } href = { getNight() ? darkcv : lightcv } className="block text-xl p-2 text-white font-normal bg-blurple border-2 border-bgLight dark:border-bgDark rounded-md shadow-[0_0_0_2px_var(--blurple)]">
                             <div className="btnContent flex justify-center items-center">
                                 <div className="download-icon w-[25px] mr-2">
                                     <Download fill = '#fff' />
@@ -85,10 +83,10 @@ function App() {
                 </section>
             </section>
             <section id='works' className='bg-bgLight dark:bg-bgDark w-screen h-screen'>
-                Ciao
+                Coming Soon...!
             </section>
             <section id='contact' className='bg-bgLight dark:bg-bgDark w-screen h-screen'>
-                Ciao
+                Coming Soon...!
             </section>
         </div>
     );

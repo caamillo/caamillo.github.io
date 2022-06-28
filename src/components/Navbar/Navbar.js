@@ -7,13 +7,17 @@ import { ReactComponent as Bars } from '../../icons/bars.svg'
 // Components
 import { Options, openOptions, closeOptions } from './Options'
 
-// Hooks
-import useNight from '../../hooks/useNight'
+// Utils
+import getNight from '../../utils/getNight'
+
+// test
+import { testVarOut } from '../ThemeToggler'
+import { useEffect } from 'react'
 
 function Navbar() {
 
     const [isOpen, setIsOpen] = useState(false)
-    const [isNight, setIsNight] = useNight(false)
+    useEffect(() => {console.log('CIAO', testVarOut)}, [testVarOut])
 
     return (
         <div className = "md:sticky md:top-0 text-black dark:text-white z-10">
@@ -28,7 +32,7 @@ function Navbar() {
                         <button onClick = { () => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' }) } className = "md:inline hidden hover:text-black/50 dark:hover:text-white/80">Contact</button>
                     </div>
                     <button id = 'btnMenu' onClick = { async () => isOpen ? await closeOptions() : await openOptions() } className = "absolute right-0 mr-4 sm:block md:hidden w-[25px] h-[25px] z-10">
-                        <Bars fill = { isNight ? '#ffffff90' :' #00000090' } />
+                        <Bars fill = { getNight() ? '#ffffff90' : '#00000090' } />
                     </button>
                 </div>
             </nav>

@@ -5,9 +5,18 @@ import { useState, useEffect } from 'react'
 import { ReactComponent as Sun } from '../icons/sun.svg'
 import { ReactComponent as Moon } from '../icons/moon.svg'
 
-function ThemeToggler({ isNight, setIsNight }) {
+// Hooks
+import useNight from '../hooks/useNight'
 
+let testVarOut
+
+const consoleTest = () => console.log(testVarOut)
+
+function ThemeToggler() {
+    const [isNight, setIsNight] = useNight()
     const [IconTheme, setIconTheme] = useState(isNight ? Sun : Moon)
+    const [testVar, setTestVar] = useState(false)
+    useEffect(() => {setTestVar(!testVar); testVarOut = testVar; consoleTest()}, [isNight])
 
     useEffect(() => {
         setIconTheme(isNight ? Sun : Moon)
@@ -22,4 +31,4 @@ function ThemeToggler({ isNight, setIsNight }) {
     )
 }
 
-export default ThemeToggler;
+export { ThemeToggler, testVarOut };
