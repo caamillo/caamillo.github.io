@@ -10,14 +10,9 @@ import { Options, openOptions, closeOptions } from './Options'
 // Utils
 import getNight from '../../utils/getNight'
 
-// test
-import { testVarOut } from '../ThemeToggler'
-import { useEffect } from 'react'
-
 function Navbar() {
 
     const [isOpen, setIsOpen] = useState(false)
-    useEffect(() => {console.log('CIAO', testVarOut)}, [testVarOut])
 
     return (
         <div className = "md:sticky md:top-0 text-black dark:text-white z-10">
