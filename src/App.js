@@ -15,6 +15,9 @@ import { ReactComponent as Download } from './icons/download.svg'
 import { ReactComponent as Plane } from './icons/plane.svg'
 import { ReactComponent as Phone } from './icons/phone.svg'
 import { ReactComponent as React } from './icons/react.svg'
+import { ReactComponent as Nodejs } from './icons/nodejs.svg'
+import { ReactComponent as Java } from './icons/java.svg'
+import { ReactComponent as Php } from './icons/php.svg'
 import { ReactComponent as Instagram } from './icons/social/instagram.svg'
 import { ReactComponent as Github } from './icons/social/github.svg'
 import { ReactComponent as Twitter } from './icons/social/twitter.svg'
@@ -26,12 +29,19 @@ import lightcv from './imgs/cvs/lightcv.png'
 // Utils
 import getNight from './utils/getNight'
 
+const maxParagraphLegth = 170
+
 function App() {
     const [isNight, setIsNight] = useState(getNight())
     const [isFlying, setIsFlying] = useState(false)
 
     window.addEventListener('storage', () => {
         setIsNight(getNight())
+    })
+
+    useEffect(() => {
+        const contextes = document.getElementsByClassName('contextDesc')
+        for (let context of contextes) if (context.innerHTML.length > maxParagraphLegth) context.innerHTML = context.innerHTML.substring(0, maxParagraphLegth) + '...'
     })
 
     useEffect(() => {
@@ -97,55 +107,67 @@ function App() {
                 <div className="wrapper flex flex-row justify-center">
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 space-y-3 md:space-y-0 child:w-[250px] child:h-[250px] child:md:w-[300px] child:md:h-[300px]">
                         <div className='border-2 border-blurple rounded-md'>
-                            <div className="context m-5 space-y-4">
-                                <div className="header flex justify-between">
-                                    <React fill='var(--blurple)' className='w-[50px] md:w-[50px]' />
+                            <div className="context relative h-[85%] m-5 space-y-3 md:space-y-4">
+                                <div className="header flex justify-between h-[35px] md:h-[50px]">
+                                    <React fill='var(--blurple)' className='w-[35px] md:w-[50px]' />
                                     <div className="project-name w-[75%] md:w-[80%] flex justify-center items-center text-center font-radiocanada font-bold md:text-xl text-blurple text-lg">
                                         Skinalette
                                     </div>
                                 </div>
-                                <div className="desc text-sm md:text-base">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel tincidunt eros. Etiam sit amet laoreet dui. Praesent molestie sem et nunc ultrices, et molestie nibh laoreet.
+                                <div className="desc text-sm md:text-base space-y-4">
+                                    <div className="contextDesc break-all">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel tincidunt eros. Etiam sit amet laoreet dui. Praesent molestie sem et nunc ultrices, et molestie nibh
+                                    </div>
                                 </div>
+                                <a href="#" className='text-blurple text-sm md:text-base absolute bottom-0 left-0 font-bold hover:text-darkBlurple transition ease-in-out delay-50'>Read More</a>
                             </div>
                         </div>
                         <div className='border-2 border-blurple rounded-md'>
-                            <div className="context m-5 space-y-4">
-                                <div className="header flex justify-between">
-                                    <React fill='var(--blurple)' className='w-[50px] md:w-[50px]' />
+                            <div className="context relative h-[85%] m-5 space-y-3 md:space-y-4">
+                            <div className="header flex justify-between h-[35px] md:h-[50px]">
+                                    <Nodejs fill='var(--blurple)' className='w-[35px] md:w-[50px]' />
                                     <div className="project-name w-[75%] md:w-[80%] flex justify-center items-center text-center font-radiocanada font-bold md:text-xl text-blurple text-lg">
-                                        Skinalette
+                                        Dascanio Project
                                     </div>
                                 </div>
-                                <div className="desc text-sm md:text-base">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel tincidunt eros. Etiam sit amet laoreet dui. Praesent molestie sem et nunc ultrices, et molestie nibh laoreet.
+                                <div className="desc text-sm md:text-base space-y-4">
+                                    <div className="contextDesc break-all">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel tincidunt eros. Etiam sit amet laoreet dui. Praesent molestie sem et nunc ultrices, et molestie nibh
+                                    </div>
                                 </div>
+                                <a href="#" className='text-blurple text-sm md:text-base absolute bottom-0 left-0 font-bold hover:text-darkBlurple transition ease-in-out delay-50'>Read More</a>
                             </div>
                         </div>
                         <div className='border-2 border-blurple rounded-md'>
-                            <div className="context m-5 space-y-4">
-                                <div className="header flex justify-between">
-                                    <React fill='var(--blurple)' className='w-[50px] md:w-[50px]' />
+                            <div className="context relative h-[85%] m-5 space-y-4 md:space-y-4">
+                                <div className="header flex justify-between h-[35px] md:h-[50px]">
+                                    <Java fill='var(--blurple)' className='w-[35px] md:w-[50px]' />
                                     <div className="project-name w-[75%] md:w-[80%] flex justify-center items-center text-center font-radiocanada font-bold md:text-xl text-blurple text-lg">
-                                        Skinalette
+                                        Test Card Game
                                     </div>
                                 </div>
-                                <div className="desc text-sm md:text-base">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel tincidunt eros. Etiam sit amet laoreet dui. Praesent molestie sem et nunc ultrices, et molestie nibh laoreet.
+                                <div className="desc text-sm md:text-base space-y-4">
+                                    <div className="contextDesc break-all">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel tincidunt eros. Etiam sit amet laoreet dui. Praesent molestie sem et nunc ultrices, et molestie nibh
+                                    </div>
                                 </div>
+                                <a href="#" className='text-blurple text-sm md:text-base absolute bottom-0 left-0 font-bold hover:text-darkBlurple transition ease-in-out delay-50'>Read More</a>
                             </div>
                         </div>
                         <div className='border-2 border-blurple rounded-md'>
-                            <div className="context m-5 space-y-4">
-                                <div className="header flex justify-between">
-                                    <React fill='var(--blurple)' className='w-[50px] md:w-[50px]' />
+                            <div className="context relative h-[85%] m-5 space-y-3 md:space-y-4">
+                                <div className="header flex justify-between h-[35px] md:h-[50px]">
+                                    <Php fill='var(--blurple)' className='w-[35px] md:w-[50px]' />
                                     <div className="project-name w-[75%] md:w-[80%] flex justify-center items-center text-center font-radiocanada font-bold md:text-xl text-blurple text-lg">
-                                        Skinalette
+                                        Eccitamometro
                                     </div>
                                 </div>
-                                <div className="desc text-sm md:text-base">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel tincidunt eros. Etiam sit amet laoreet dui. Praesent molestie sem et nunc ultrices, et molestie nibh laoreet.
+                                <div className="desc text-sm md:text-base space-y-4">
+                                    <div className="contextDesc break-all">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel tincidunt eros. Etiam sit amet laoreet dui. Praesent molestie sem et nunc ultrices, et molestie nibh
+                                    </div>
                                 </div>
+                                <a href="#" className='text-blurple text-sm md:text-base absolute bottom-0 left-0 font-bold hover:text-darkBlurple transition ease-in-out delay-50'>Read More</a>
                             </div>
                         </div>
                     </div>
@@ -168,13 +190,13 @@ function App() {
                         <div className="social-media-icons absolute left-0 right-0 mx-auto bottom-[25px] w-[100px]">
                             <div className="socials flex items-center justify-center child:w-[40px] space-x-3">
                                 <a href='https://www.instagram.com/caaamillo/'>
-                                    <Instagram className='dark:hover:fill-white/60 transition ease-in-out delay-50' fill = { isNight ? '#fff' : '#000' }/>
+                                    <Instagram className='dark:hover:fill-white/60 hover:fill-black/60 transition ease-in-out delay-50' fill = { isNight ? '#fff' : '#000' }/>
                                 </a>
                                 <a href='https://github.com/Diasky'>
-                                    <Github className='dark:hover:fill-white/60 transition ease-in-out delay-50' fill = { isNight ? '#fff' : '#000' }/>
+                                    <Github className='dark:hover:fill-white/60 hover:fill-black/60 transition ease-in-out delay-50' fill = { isNight ? '#fff' : '#000' }/>
                                 </a>
                                 <a href='https://twitter.com/camillodev'>
-                                    <Twitter className='dark:hover:fill-white/60 transition ease-in-out delay-50' fill = { isNight ? '#fff' : '#000' }/>
+                                    <Twitter className='dark:hover:fill-white/60 hover:fill-black/60 transition ease-in-out delay-50' fill = { isNight ? '#fff' : '#000' }/>
                                 </a>
                             </div>
                         </div>
