@@ -17,6 +17,7 @@ module.exports = {
       blurple: 'var(--blurple)',
       menuDark: 'var(--menuDark)',
       menuLight: 'var(--menuLight)',
+      darkBlurple: 'var(--darkBlurple)'
     },
     fontFamily: {
       'radiocanada': ['Radio Canada', 'sans-serif'],

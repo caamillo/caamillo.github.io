@@ -12,7 +12,12 @@ import getNight from '../../utils/getNight'
 
 function Navbar() {
 
+    const [isNight, setIsNight] = useState(getNight())
     const [isOpen, setIsOpen] = useState(false)
+
+    window.addEventListener('storage', () => {
+        setIsNight(getNight())
+    })
 
     return (
         <div className = "md:sticky md:top-0 text-black dark:text-white z-10">
@@ -27,7 +32,7 @@ function Navbar() {
                         <button onClick = { () => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' }) } className = "md:inline hidden hover:text-black/50 dark:hover:text-white/80">Contact</button>
                     </div>
                     <button id = 'btnMenu' onClick = { async () => isOpen ? await closeOptions() : await openOptions() } className = "absolute right-0 mr-4 sm:block md:hidden w-[25px] h-[25px] z-10">
-                        <Bars fill = { getNight() ? '#ffffff90' : '#00000090' } />
+                        <Bars fill = { isNight ? '#ffffff90' : '#00000090' } />
                     </button>
                 </div>
             </nav>
