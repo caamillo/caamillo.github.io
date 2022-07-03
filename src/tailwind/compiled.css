@@ -779,6 +779,12 @@ video {
           user-select: none;
 }
 
+.select-text {
+  -webkit-user-select: text;
+      -ms-user-select: text;
+          user-select: text;
+}
+
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
