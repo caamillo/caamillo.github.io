@@ -2,36 +2,34 @@
 import { useState, useEffect } from 'react'
 
 // Tailwind
-import './tailwind/tailwind.css'
-
-// Components
-import { ThemeToggler } from './components/ThemeToggler'
+import '../tailwind/tailwind.css'
+import '../tailwind/compiled.css'
 
 // CSS
-import './css/scrollbar.css'
+import '../css/scrollbar.css'
 
 // Icons
-import { ReactComponent as Download } from './icons/download.svg'
-import { ReactComponent as Plane } from './icons/plane.svg'
-import { ReactComponent as Phone } from './icons/phone.svg'
-import { ReactComponent as React } from './icons/react.svg'
-import { ReactComponent as Nodejs } from './icons/nodejs.svg'
-import { ReactComponent as Java } from './icons/java.svg'
-import { ReactComponent as Php } from './icons/php.svg'
-import { ReactComponent as Instagram } from './icons/social/instagram.svg'
-import { ReactComponent as Github } from './icons/social/github.svg'
-import { ReactComponent as Twitter } from './icons/social/twitter.svg'
+import { ReactComponent as Download } from '../icons/download.svg'
+import { ReactComponent as Plane } from '../icons/plane.svg'
+import { ReactComponent as Phone } from '../icons/phone.svg'
+import { ReactComponent as React } from '../icons/react.svg'
+import { ReactComponent as Nodejs } from '../icons/nodejs.svg'
+import { ReactComponent as Java } from '../icons/java.svg'
+import { ReactComponent as Php } from '../icons/php.svg'
+import { ReactComponent as Instagram } from '../icons/social/instagram.svg'
+import { ReactComponent as Github } from '../icons/social/github.svg'
+import { ReactComponent as Twitter } from '../icons/social/twitter.svg'
 
 // CVS
-import darkcv from './imgs/cvs/darkcv.png'
-import lightcv from './imgs/cvs/lightcv.png'
+import darkcv from '../imgs/cvs/darkcv.png'
+import lightcv from '../imgs/cvs/lightcv.png'
 
 // Utils
-import getNight from './utils/getNight'
+import getNight from '../utils/getNight'
 
 const maxParagraphLegth = 170
 
-function Home() {
+function Home({ goto }) {
     const [isNight, setIsNight] = useState(getNight())
     const [isFlying, setIsFlying] = useState(false)
 
@@ -42,6 +40,7 @@ function Home() {
     useEffect(() => {
         const contextes = document.getElementsByClassName('contextDesc')
         for (let context of contextes) if (context.innerHTML.length > maxParagraphLegth) context.innerHTML = context.innerHTML.substring(0, maxParagraphLegth) + '...'
+        if (goto != null && goto != '') document.getElementById(goto).scrollIntoView({ behavior: 'smooth' })
     })
 
     useEffect(() => {
@@ -79,8 +78,6 @@ function Home() {
 
     return (
         <div className="container w-screen h-full">
-            <ThemeToggler/>
-            <div className="mobile-divider h-[60px] md:hidden"></div>
             <section id='home' className='bg-bgLight dark:bg-bgDark w-screen h-screen'>
                 <section className='h-[calc(100vh-60px)] md:h-[calc(100vh-120px)] flex items-center justify-center'>
                     <div className='text-3xl md:text-5xl font-roboto font-thin text-center mb-10 space-y-5'>
@@ -174,7 +171,7 @@ function Home() {
                 </div>
             </section>
             <section id='contact' className='bg-bgLight dark:bg-bgDark w-screen h-full'>
-                <div className="contact-container flex flex-col justify-center items-center h-[calc(100vh-2.5rem)]">
+                <div className="contact-container flex flex-col justify-center items-center h-[calc(100vh-3.75rem)]">
                     <h1 className='text-2xl md:text-3xl mb-3'>Feel free to contact me</h1>
                     <div className="mobile-container flex justify-center items-center h-[50px] rounded-md shadow-[0_0_0_2px_var(--blurple)]">
                         <div className="icon w-[50px] h-[50px] flex items-center justify-center text-bgDark bg-blurple border-2 border-bgLight dark:border-bgDark rounded-md shadow-[0_0_0_2px_var(--blurple)]">
