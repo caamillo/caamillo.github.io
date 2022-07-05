@@ -11,6 +11,7 @@ function useNight(defaultNight = false) {
         else document.documentElement.classList.remove('dark')
 
         localStorage.setItem('darkmode', isNight)
+        window.dispatchEvent(new Event('storage'))
     }, [isNight])
 
     return [
