@@ -1,0 +1,10 @@
+{
+    "it" : {
+        "title" : "Funziona!",
+        "desc" : "YEeeee in italiano"
+    },
+    "en" : {
+        "title" : "It Works!",
+        "desc" : "YEeeee"
+    }
+}
