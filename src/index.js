@@ -14,7 +14,7 @@ root.render(
   <React.StrictMode>
     <Logo/>
     <Navbar/>
-    <div className="mobile-divider h-[60px] md:hidden"></div>
+    <div className="mobile-divider h-[60px] md:hidden"/>
     <ThemeToggler/>
     <App/>
   </React.StrictMode>

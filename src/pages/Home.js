@@ -27,6 +27,9 @@ import lightcv from '../imgs/cvs/lightcv.png'
 // Utils
 import getNight from '../utils/getNight'
 
+// Components
+import Work from '../components/Work'
+
 const maxParagraphLegth = 170
 
 function Home({ goto }) {
@@ -103,70 +106,10 @@ function Home({ goto }) {
                 <h1 className='text-center text-3xl p-10'>Latest Works</h1>
                 <div className="wrapper flex flex-row justify-center">
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 space-y-3 md:space-y-0 child:w-[250px] child:h-[250px] child:md:w-[300px] child:md:h-[300px]">
-                        <div className='border-2 border-blurple rounded-md'>
-                            <div className="context relative h-[85%] m-5 space-y-3 md:space-y-4">
-                                <div className="header flex justify-between h-[35px] md:h-[50px]">
-                                    <React fill='var(--blurple)' className='w-[35px] md:w-[50px]' />
-                                    <div className="project-name w-[75%] md:w-[80%] flex justify-center items-center text-center font-radiocanada font-bold md:text-xl text-blurple text-lg">
-                                        Skinalette
-                                    </div>
-                                </div>
-                                <div className="desc text-sm md:text-base space-y-4">
-                                    <div className="contextDesc break-all">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel tincidunt eros. Etiam sit amet laoreet dui. Praesent molestie sem et nunc ultrices, et molestie nibh
-                                    </div>
-                                </div>
-                                <a href="#" className='text-blurple text-sm md:text-base absolute bottom-0 left-0 font-bold hover:text-darkBlurple transition ease-in-out delay-50'>Read More</a>
-                            </div>
-                        </div>
-                        <div className='border-2 border-blurple rounded-md'>
-                            <div className="context relative h-[85%] m-5 space-y-3 md:space-y-4">
-                            <div className="header flex justify-between h-[35px] md:h-[50px]">
-                                    <Nodejs fill='var(--blurple)' className='w-[35px] md:w-[50px]' />
-                                    <div className="project-name w-[75%] md:w-[80%] flex justify-center items-center text-center font-radiocanada font-bold md:text-xl text-blurple text-lg">
-                                        Dascanio Project
-                                    </div>
-                                </div>
-                                <div className="desc text-sm md:text-base space-y-4">
-                                    <div className="contextDesc break-all">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel tincidunt eros. Etiam sit amet laoreet dui. Praesent molestie sem et nunc ultrices, et molestie nibh
-                                    </div>
-                                </div>
-                                <a href="#" className='text-blurple text-sm md:text-base absolute bottom-0 left-0 font-bold hover:text-darkBlurple transition ease-in-out delay-50'>Read More</a>
-                            </div>
-                        </div>
-                        <div className='border-2 border-blurple rounded-md'>
-                            <div className="context relative h-[85%] m-5 space-y-4 md:space-y-4">
-                                <div className="header flex justify-between h-[35px] md:h-[50px]">
-                                    <Java fill='var(--blurple)' className='w-[35px] md:w-[50px]' />
-                                    <div className="project-name w-[75%] md:w-[80%] flex justify-center items-center text-center font-radiocanada font-bold md:text-xl text-blurple text-lg">
-                                        Test Card Game
-                                    </div>
-                                </div>
-                                <div className="desc text-sm md:text-base space-y-4">
-                                    <div className="contextDesc break-all">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel tincidunt eros. Etiam sit amet laoreet dui. Praesent molestie sem et nunc ultrices, et molestie nibh
-                                    </div>
-                                </div>
-                                <a href="#" className='text-blurple text-sm md:text-base absolute bottom-0 left-0 font-bold hover:text-darkBlurple transition ease-in-out delay-50'>Read More</a>
-                            </div>
-                        </div>
-                        <div className='border-2 border-blurple rounded-md'>
-                            <div className="context relative h-[85%] m-5 space-y-3 md:space-y-4">
-                                <div className="header flex justify-between h-[35px] md:h-[50px]">
-                                    <Php fill='var(--blurple)' className='w-[35px] md:w-[50px]' />
-                                    <div className="project-name w-[75%] md:w-[80%] flex justify-center items-center text-center font-radiocanada font-bold md:text-xl text-blurple text-lg">
-                                        Eccitamometro
-                                    </div>
-                                </div>
-                                <div className="desc text-sm md:text-base space-y-4">
-                                    <div className="contextDesc break-all">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel tincidunt eros. Etiam sit amet laoreet dui. Praesent molestie sem et nunc ultrices, et molestie nibh
-                                    </div>
-                                </div>
-                                <a href="#" className='text-blurple text-sm md:text-base absolute bottom-0 left-0 font-bold hover:text-darkBlurple transition ease-in-out delay-50'>Read More</a>
-                            </div>
-                        </div>
+                        <Work title='Skinalette' Icon={ React } />
+                        <Work title="Dascanio Project" Icon={ React } />
+                        <Work title='Test Card Game' Icon={ React } />
+                        <Work title='Eccitamometro' Icon={ React } />
                     </div>
                 </div>
             </section>

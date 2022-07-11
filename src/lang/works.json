@@ -1,10 +1,12 @@
 {
     "it" : {
-        "title" : "Funziona!",
-        "desc" : "YEeeee in italiano"
+        "skinalette" : {
+            "title" : "Skinalette"
+        }
     },
     "en" : {
-        "title" : "It Works!",
-        "desc" : "YEeeee"
+        "skinalette" : {
+            "title" : "Skinalette"
+        }
     }
 }
