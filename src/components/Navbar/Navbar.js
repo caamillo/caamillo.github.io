@@ -1,5 +1,6 @@
 // React
 import { useState } from 'react'
+import { Link, useLocation } from 'react-router-dom'
 
 // Icons
 import { ReactComponent as Bars } from '../../icons/bars.svg'
@@ -13,6 +14,8 @@ import getNight from '../../utils/getNight'
 function Navbar() {
 
     const [isNight, setIsNight] = useState(getNight())
+    const [isHome, setIsHome] = useState(false)
+    console.log(window.location.hash.length <= 8)
     const [isOpen, setIsOpen] = useState(false)
 
     window.addEventListener('storage', () => {

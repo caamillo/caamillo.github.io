@@ -11,8 +11,8 @@ function Works() {
     console.log(workname)
     return (
         <div className="wrapper h-[calc(100vh-60px)] md:h-[calc(100vh-120px)]">
-            <h1>{ works['en'][workname]['title'] }</h1>
-            <h2>{ works['en']['desc'] }</h2>
+            <h1>{ works[workname]['title'] }</h1>
+            <h2>{ works[workname]['desc']['en'] }</h2>
         </div>
     );
 }

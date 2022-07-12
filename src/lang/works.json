@@ -1,12 +1,30 @@
 {
-    "it" : {
-        "skinalette" : {
-            "title" : "Skinalette"
+    "skinalette" : {
+        "title" : "Skinalette",
+        "desc" : {
+            "it" : "test-Ita",
+            "en" : "test-Eng"
         }
     },
-    "en" : {
-        "skinalette" : {
-            "title" : "Skinalette"
+    "dascanio" : {
+        "title" : "Dascanio Project",
+        "desc" : {
+            "it" : "test-Ita",
+            "en" : "test-Eng"
+        }
+    },
+    "testgame" : {
+        "title" : "Test Card Game",
+        "desc" : {
+            "it" : "test-Ita",
+            "en" : "test-Eng"
+        }
+    },
+    "eccitamometro" : {
+        "title" : "Eccitamometro",
+        "desc" : {
+            "it" : "test-Ita",
+            "en" : "test-Eng"
         }
     }
 }

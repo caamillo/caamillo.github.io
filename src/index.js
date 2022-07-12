@@ -7,6 +7,7 @@ import App from './App';
 import Navbar from './components/Navbar/Navbar'
 import Logo from './components/Navbar/Logo'
 import { ThemeToggler } from './components/ThemeToggler'
+import Social from './components/Social'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 
@@ -17,5 +18,6 @@ root.render(
     <div className="mobile-divider h-[60px] md:hidden"/>
     <ThemeToggler/>
     <App/>
+    <Social/>
   </React.StrictMode>
 );

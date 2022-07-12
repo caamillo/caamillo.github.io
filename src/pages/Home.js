@@ -16,9 +16,6 @@ import { ReactComponent as React } from '../icons/react.svg'
 import { ReactComponent as Nodejs } from '../icons/nodejs.svg'
 import { ReactComponent as Java } from '../icons/java.svg'
 import { ReactComponent as Php } from '../icons/php.svg'
-import { ReactComponent as Instagram } from '../icons/social/instagram.svg'
-import { ReactComponent as Github } from '../icons/social/github.svg'
-import { ReactComponent as Twitter } from '../icons/social/twitter.svg'
 
 // CVS
 import darkcv from '../imgs/cvs/darkcv.png'
@@ -106,10 +103,10 @@ function Home({ goto }) {
                 <h1 className='text-center text-3xl p-10'>Latest Works</h1>
                 <div className="wrapper flex flex-row justify-center">
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 space-y-3 md:space-y-0 child:w-[250px] child:h-[250px] child:md:w-[300px] child:md:h-[300px]">
-                        <Work title='Skinalette' Icon={ React } />
-                        <Work title="Dascanio Project" Icon={ React } />
-                        <Work title='Test Card Game' Icon={ React } />
-                        <Work title='Eccitamometro' Icon={ React } />
+                        <Work title='Skinalette' Icon={ React } link="works/skinalette" />
+                        <Work title="Dascanio Project" Icon={ Nodejs } link="works/dascanio" />
+                        <Work title='Test Card Game' Icon={ Java } link="works/testgame" />
+                        <Work title='Eccitamometro' Icon={ Php } link="works/eccitamometro" />
                     </div>
                 </div>
             </section>
@@ -126,21 +123,6 @@ function Home({ goto }) {
                     </div>
                     <div className="text text-sm mt-4">or send me an <a href="mailto:mcamillolud@gmail.com" className='text-blurple hover:text-darkBlurple transition ease-in-out delay-50'>email</a></div>
                 </div>
-                <div className="social-container relative">
-                        <div className="social-media-icons absolute left-0 right-0 mx-auto bottom-[25px] w-[100px]">
-                            <div className="socials flex items-center justify-center child:w-[40px] space-x-3">
-                                <a href='https://www.instagram.com/caaamillo/'>
-                                    <Instagram className='dark:hover:fill-white/60 hover:fill-black/60 transition ease-in-out delay-50' fill = { isNight ? '#fff' : '#000' }/>
-                                </a>
-                                <a href='https://github.com/caamillo'>
-                                    <Github className='dark:hover:fill-white/60 hover:fill-black/60 transition ease-in-out delay-50' fill = { isNight ? '#fff' : '#000' }/>
-                                </a>
-                                <a href='https://twitter.com/camillodev'>
-                                    <Twitter className='dark:hover:fill-white/60 hover:fill-black/60 transition ease-in-out delay-50' fill = { isNight ? '#fff' : '#000' }/>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
             </section>
         </div>
     );

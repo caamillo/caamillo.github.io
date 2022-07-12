@@ -1,4 +1,6 @@
-function Logo({ title, desc, Icon, link }) {
+import { Link } from 'react-router-dom'
+
+function Work({ title, desc, Icon, link }) {
 
     return (
         <div className='border-2 border-blurple rounded-md'>
@@ -14,10 +16,10 @@ function Logo({ title, desc, Icon, link }) {
                         Test ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel tincidunt eros. Etiam sit amet laoreet dui. Praesent molestie sem et nunc ultrices, et molestie nibh
                     </div>
                 </div>
-                <a href="#" className='text-blurple text-sm md:text-base absolute bottom-0 left-0 font-bold hover:text-darkBlurple transition ease-in-out delay-50'>Read More</a>
+                <Link to = {link} className='text-blurple text-sm md:text-base absolute bottom-0 left-0 font-bold hover:text-darkBlurple transition ease-in-out delay-50'>Read More</Link>
             </div>
         </div>
     )
 }
 
-export default Logo
+export default Work
