@@ -1,6 +1,7 @@
 {
     "skinalette" : {
         "title" : "Skinalette",
+        "langs" : "React, Tailwind",
         "desc" : {
             "it" : "test-Ita",
             "en" : "test-Eng"
@@ -8,6 +9,7 @@
     },
     "dascanio" : {
         "title" : "Dascanio Project",
+        "langs" : "React, Tailwind",
         "desc" : {
             "it" : "test-Ita",
             "en" : "test-Eng"
@@ -15,6 +17,7 @@
     },
     "testgame" : {
         "title" : "Test Card Game",
+        "langs" : "React, Tailwind",
         "desc" : {
             "it" : "test-Ita",
             "en" : "test-Eng"
@@ -22,6 +25,7 @@
     },
     "eccitamometro" : {
         "title" : "Eccitamometro",
+        "langs" : "React, Tailwind",
         "desc" : {
             "it" : "test-Ita",
             "en" : "test-Eng"
