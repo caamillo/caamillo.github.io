@@ -10,7 +10,7 @@
     },
     "dascanio" : {
         "title" : "Dascanio Project",
-        "langs" : "React, Tailwind",
+        "langs" : "Nodejs, Mongodb, Sass",
         "desc" : {
             "it" : "test-Ita",
             "en" : "test-Eng"
@@ -19,7 +19,7 @@
     },
     "testgame" : {
         "title" : "Test Card Game",
-        "langs" : "React, Tailwind",
+        "langs" : "Java, Swing",
         "desc" : {
             "it" : "test-Ita",
             "en" : "test-Eng"
@@ -28,7 +28,7 @@
     },
     "eccitamometro" : {
         "title" : "Eccitamometro",
-        "langs" : "React, Tailwind",
+        "langs" : "PHP, Chartjs",
         "desc" : {
             "it" : "test-Ita",
             "en" : "test-Eng"

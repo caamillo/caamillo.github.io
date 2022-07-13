@@ -15,7 +15,6 @@ root.render(
   <React.StrictMode>
     <Logo/>
     <div className="mobile-divider h-[60px] md:hidden"/>
-    <LanguageToggler/>
     <ThemeToggler/>
     <App/>
     <Social/>
