@@ -1,0 +1,38 @@
+{
+    "skinalette" : {
+        "title" : "Skinalette",
+        "langs" : "React, Tailwind",
+        "desc" : {
+            "it" : "test-Ita",
+            "en" : "test-Eng"
+        },
+        "link" : "https://github.com/caamillo/skinalette"
+    },
+    "dascanio" : {
+        "title" : "Dascanio Project",
+        "langs" : "React, Tailwind",
+        "desc" : {
+            "it" : "test-Ita",
+            "en" : "test-Eng"
+        },
+        "link" : "https://github.com/caamillo/dascanioproject"
+    },
+    "testgame" : {
+        "title" : "Test Card Game",
+        "langs" : "React, Tailwind",
+        "desc" : {
+            "it" : "test-Ita",
+            "en" : "test-Eng"
+        },
+        "link" : "https://github.com/caamillo/giochetto"
+    },
+    "eccitamometro" : {
+        "title" : "Eccitamometro",
+        "langs" : "React, Tailwind",
+        "desc" : {
+            "it" : "test-Ita",
+            "en" : "test-Eng"
+        }
+    },
+    "link" : null
+}

@@ -16,9 +16,6 @@ import { ReactComponent as React } from '../icons/react.svg'
 import { ReactComponent as Nodejs } from '../icons/nodejs.svg'
 import { ReactComponent as Java } from '../icons/java.svg'
 import { ReactComponent as Php } from '../icons/php.svg'
-import { ReactComponent as Instagram } from '../icons/social/instagram.svg'
-import { ReactComponent as Github } from '../icons/social/github.svg'
-import { ReactComponent as Twitter } from '../icons/social/twitter.svg'
 
 // CVS
 import darkcv from '../imgs/cvs/darkcv.png'
@@ -26,6 +23,9 @@ import lightcv from '../imgs/cvs/lightcv.png'
 
 // Utils
 import getNight from '../utils/getNight'
+
+// Components
+import Work from '../components/Work'
 
 const maxParagraphLegth = 170
 
@@ -103,70 +103,10 @@ function Home({ goto }) {
                 <h1 className='text-center text-3xl p-10'>Latest Works</h1>
                 <div className="wrapper flex flex-row justify-center">
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 space-y-3 md:space-y-0 child:w-[250px] child:h-[250px] child:md:w-[300px] child:md:h-[300px]">
-                        <div className='border-2 border-blurple rounded-md'>
-                            <div className="context relative h-[85%] m-5 space-y-3 md:space-y-4">
-                                <div className="header flex justify-between h-[35px] md:h-[50px]">
-                                    <React fill='var(--blurple)' className='w-[35px] md:w-[50px]' />
-                                    <div className="project-name w-[75%] md:w-[80%] flex justify-center items-center text-center font-radiocanada font-bold md:text-xl text-blurple text-lg">
-                                        Skinalette
-                                    </div>
-                                </div>
-                                <div className="desc text-sm md:text-base space-y-4">
-                                    <div className="contextDesc break-all">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel tincidunt eros. Etiam sit amet laoreet dui. Praesent molestie sem et nunc ultrices, et molestie nibh
-                                    </div>
-                                </div>
-                                <a href="#" className='text-blurple text-sm md:text-base absolute bottom-0 left-0 font-bold hover:text-darkBlurple transition ease-in-out delay-50'>Read More</a>
-                            </div>
-                        </div>
-                        <div className='border-2 border-blurple rounded-md'>
-                            <div className="context relative h-[85%] m-5 space-y-3 md:space-y-4">
-                            <div className="header flex justify-between h-[35px] md:h-[50px]">
-                                    <Nodejs fill='var(--blurple)' className='w-[35px] md:w-[50px]' />
-                                    <div className="project-name w-[75%] md:w-[80%] flex justify-center items-center text-center font-radiocanada font-bold md:text-xl text-blurple text-lg">
-                                        Dascanio Project
-                                    </div>
-                                </div>
-                                <div className="desc text-sm md:text-base space-y-4">
-                                    <div className="contextDesc break-all">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel tincidunt eros. Etiam sit amet laoreet dui. Praesent molestie sem et nunc ultrices, et molestie nibh
-                                    </div>
-                                </div>
-                                <a href="#" className='text-blurple text-sm md:text-base absolute bottom-0 left-0 font-bold hover:text-darkBlurple transition ease-in-out delay-50'>Read More</a>
-                            </div>
-                        </div>
-                        <div className='border-2 border-blurple rounded-md'>
-                            <div className="context relative h-[85%] m-5 space-y-4 md:space-y-4">
-                                <div className="header flex justify-between h-[35px] md:h-[50px]">
-                                    <Java fill='var(--blurple)' className='w-[35px] md:w-[50px]' />
-                                    <div className="project-name w-[75%] md:w-[80%] flex justify-center items-center text-center font-radiocanada font-bold md:text-xl text-blurple text-lg">
-                                        Test Card Game
-                                    </div>
-                                </div>
-                                <div className="desc text-sm md:text-base space-y-4">
-                                    <div className="contextDesc break-all">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel tincidunt eros. Etiam sit amet laoreet dui. Praesent molestie sem et nunc ultrices, et molestie nibh
-                                    </div>
-                                </div>
-                                <a href="#" className='text-blurple text-sm md:text-base absolute bottom-0 left-0 font-bold hover:text-darkBlurple transition ease-in-out delay-50'>Read More</a>
-                            </div>
-                        </div>
-                        <div className='border-2 border-blurple rounded-md'>
-                            <div className="context relative h-[85%] m-5 space-y-3 md:space-y-4">
-                                <div className="header flex justify-between h-[35px] md:h-[50px]">
-                                    <Php fill='var(--blurple)' className='w-[35px] md:w-[50px]' />
-                                    <div className="project-name w-[75%] md:w-[80%] flex justify-center items-center text-center font-radiocanada font-bold md:text-xl text-blurple text-lg">
-                                        Eccitamometro
-                                    </div>
-                                </div>
-                                <div className="desc text-sm md:text-base space-y-4">
-                                    <div className="contextDesc break-all">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel tincidunt eros. Etiam sit amet laoreet dui. Praesent molestie sem et nunc ultrices, et molestie nibh
-                                    </div>
-                                </div>
-                                <a href="#" className='text-blurple text-sm md:text-base absolute bottom-0 left-0 font-bold hover:text-darkBlurple transition ease-in-out delay-50'>Read More</a>
-                            </div>
-                        </div>
+                        <Work title='Skinalette' Icon={ React } link="/works/skinalette" />
+                        <Work title="Dascanio Project" Icon={ Nodejs } link="/works/dascanio" />
+                        <Work title='Test Card Game' Icon={ Java } link="/works/testgame" />
+                        <Work title='Eccitamometro' Icon={ Php } link="/works/eccitamometro" />
                     </div>
                 </div>
             </section>
@@ -183,21 +123,6 @@ function Home({ goto }) {
                     </div>
                     <div className="text text-sm mt-4">or send me an <a href="mailto:mcamillolud@gmail.com" className='text-blurple hover:text-darkBlurple transition ease-in-out delay-50'>email</a></div>
                 </div>
-                <div className="social-container relative">
-                        <div className="social-media-icons absolute left-0 right-0 mx-auto bottom-[25px] w-[100px]">
-                            <div className="socials flex items-center justify-center child:w-[40px] space-x-3">
-                                <a href='https://www.instagram.com/caaamillo/'>
-                                    <Instagram className='dark:hover:fill-white/60 hover:fill-black/60 transition ease-in-out delay-50' fill = { isNight ? '#fff' : '#000' }/>
-                                </a>
-                                <a href='https://github.com/caamillo'>
-                                    <Github className='dark:hover:fill-white/60 hover:fill-black/60 transition ease-in-out delay-50' fill = { isNight ? '#fff' : '#000' }/>
-                                </a>
-                                <a href='https://twitter.com/camillodev'>
-                                    <Twitter className='dark:hover:fill-white/60 hover:fill-black/60 transition ease-in-out delay-50' fill = { isNight ? '#fff' : '#000' }/>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
             </section>
         </div>
     );
