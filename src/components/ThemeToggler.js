@@ -8,13 +8,9 @@ import { ReactComponent as Moon } from '../icons/moon.svg'
 // Hooks
 import useNight from '../hooks/useNight'
 
-let testVarOut
-
 function ThemeToggler() {
     const [isNight, setIsNight] = useNight()
     const [IconTheme, setIconTheme] = useState(isNight ? Sun : Moon)
-    const [testVar, setTestVar] = useState(false)
-    useEffect(() => { setTestVar(!testVar); testVarOut = testVar }, [isNight])
 
     useEffect(() => {
         setIconTheme(isNight ? Sun : Moon)
@@ -29,4 +25,4 @@ function ThemeToggler() {
     )
 }
 
-export { ThemeToggler, testVarOut };
+export default ThemeToggler;
