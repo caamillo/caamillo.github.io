@@ -22,7 +22,7 @@ function Works() {
                 <div className='card-content w-[300px] md:w-[500px] flex justify-center flex-col'>
                     <p className='text-sm md:text-base'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis turpis ex. Phasellus nulla magna, laoreet non lacus a, consequat gravida diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec vitae purus scelerisque, maximus lectus eget, interdum neque. Fusce rhoncus, ipsum quis porttitor scelerisque, lorem est tincidunt leo, at venenatis mi purus id nulla. Donec nibh purus, vulputate fringilla sagittis vitae, mollis nec ligula. Vivamus et turpis leo.</p>
                     { works[workname]['link'] && <a href={ works[workname]['link'] } className='text-blurple border-2 border-blurple rounded-md p-2 mt-5 flex justify-center items-center'><ExternalArrow fill="var(--blurple)" className='w-4 mx-2' /> Go to Repo</a> }
-                    { !works[workname]['link'] && <div className='text-blurple border-2 border-blurple opacity-60 rounded-md p-2 mt-5 flex justify-center items-center'>Link not avaible</div> }
+                    { !works[workname]['link'] && <div className='text-blurple border-2 border-blurple opacity-60 rounded-md p-2 mt-5 flex justify-center items-center'>Link not available</div> }
                 </div>
             </div>
         </div>
