@@ -691,10 +691,6 @@ video {
   height: 25px;
 }
 
-.min-h-full {
-  min-height: 100%;
-}
-
 .w-\[50px\] {
   width: 50px;
 }
@@ -1255,8 +1251,8 @@ video {
   }
 }
 
-@media (min-height: 800px) {
-  .tall\:block {
-    display: block;
+@media (max-height: 850px) {
+  .tiny\:h-full {
+    height: 100%;
   }
 }
