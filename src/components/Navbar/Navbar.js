@@ -27,9 +27,9 @@ function Navbar() {
                         <a href = "#" className = 'text-xl md:text-5xl'>Camillo <span className = "font-thin">Portfolio</span></a>
                     </div>
                     <div className="pages space-x-10 child:transition child:ease-in-out child:delay-50 font-normal font-radiocanada">
-                        <Link to = "/home" className = "md:inline hidden hover:text-black/50 dark:hover:text-white/80">Home</Link>
-                        <Link to = "/works" className = "md:inline hidden hover:text-black/50 dark:hover:text-white/80">Works</Link>
-                        <Link to = "/contact" className = "md:inline hidden hover:text-black/50 dark:hover:text-white/80">Contact</Link>
+                        <Link onClick={() => localStorage.setItem('isGone', false)} to = "/home" className = "md:inline hidden hover:text-black/50 dark:hover:text-white/80">Home</Link>
+                        <Link onClick={() => localStorage.setItem('isGone', false)} to = "/works" className = "md:inline hidden hover:text-black/50 dark:hover:text-white/80">Works</Link>
+                        <Link onClick={() => localStorage.setItem('isGone', false)} to = "/contact" className = "md:inline hidden hover:text-black/50 dark:hover:text-white/80">Contact</Link>
                     </div>
                     <button id = 'btnMenu' onClick = { async () => isOpen ? await closeOptions() : await openOptions() } className = "absolute right-0 mr-4 sm:block md:hidden w-[25px] h-[25px] z-10">
                         <Bars fill = { isNight ? '#ffffff90' : '#00000090' } />

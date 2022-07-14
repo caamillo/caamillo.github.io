@@ -50,7 +50,7 @@ function Home({ goto }) {
     useEffect(() => {
         const contextes = document.getElementsByClassName('contextDesc')
         for (let context of contextes) if (context.innerHTML.length > maxParagraphLegth) context.innerHTML = context.innerHTML.substring(0, maxParagraphLegth) + '...'
-        if (goto != null && goto != '') document.getElementById(goto).scrollIntoView({ behavior: 'smooth' })
+        if (goto != null && goto != '' && localStorage.getItem('isGone') == 'false') { document.getElementById(goto).scrollIntoView({ behavior: 'smooth' }); localStorage.setItem('isGone', true) }
     })
 
     useEffect(() => {
