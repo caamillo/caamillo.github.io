@@ -111,7 +111,7 @@ function Home({ goto }) {
                 </div>
             </section>
             <section id='contact' className='bg-bgLight dark:bg-bgDark w-screen h-full'>
-                <div className="contact-container flex flex-col justify-center items-center h-[calc(100vh-3.75rem)]">
+                <div className="contact-container flex flex-col justify-center items-center h-[74vh] md:h-[84vh]">
                     <h1 className='text-2xl md:text-3xl mb-3'>Feel free to contact me</h1>
                     <div className="mobile-container flex justify-center items-center h-[50px] rounded-md shadow-[0_0_0_2px_var(--blurple)]">
                         <div className="icon w-[50px] h-[50px] flex items-center justify-center text-bgDark bg-blurple border-2 border-bgLight dark:border-bgDark rounded-md shadow-[0_0_0_2px_var(--blurple)]">
