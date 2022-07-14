@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 function NotFound() {
 
     return (
-        <div className="wrapper h-[calc(100vh-60px)] md:h-[calc(100vh-120px)]">
+        <div className="wrapper h-[calc(100vh-60px-100px-1.25rem)] md:h-[calc(100vh-120px-70px-1.25rem)]">
             <div className="error flex flex-col justify-center items-center w-full h-full text-center">
                 <h1 className="text-9xl font-bold font-roboto">404</h1>
                 <div className="explain font-roboto">

@@ -27,7 +27,17 @@ import getNight from '../utils/getNight'
 // Components
 import Work from '../components/Work'
 
+// Lang
+import works from '../lang/works.json'
+
 const maxParagraphLegth = 170
+
+const appIcons = [
+    React,
+    Nodejs,
+    Java,
+    Php
+]
 
 function Home({ goto }) {
     const [isNight, setIsNight] = useState(getNight())
@@ -103,15 +113,14 @@ function Home({ goto }) {
                 <h1 className='text-center text-3xl p-10'>Latest Works</h1>
                 <div className="wrapper flex flex-row justify-center">
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 space-y-3 md:space-y-0 child:w-[250px] child:h-[250px] child:md:w-[300px] child:md:h-[300px]">
-                        <Work title='Skinalette' Icon={ React } link="/works/skinalette" />
-                        <Work title="Dascanio Project" Icon={ Nodejs } link="/works/dascanio" />
-                        <Work title='Test Card Game' Icon={ Java } link="/works/testgame" />
-                        <Work title='Eccitamometro' Icon={ Php } link="/works/eccitamometro" />
+                        {
+                            Object.keys(works).map(x => <Work title={ works[x].title } desc={ works[x].desc.it } Icon={ appIcons[works[x].icon] } link={ '/works/' + works[x].page } key = { works[x].page } />)
+                        }
                     </div>
                 </div>
             </section>
             <section id='contact' className='bg-bgLight dark:bg-bgDark w-screen h-full'>
-                <div className="contact-container flex flex-col justify-center items-center h-[calc(100vh-3.75rem)]">
+                <div className="contact-container flex flex-col justify-center items-center h-[74vh] md:h-[84vh]">
                     <h1 className='text-2xl md:text-3xl mb-3'>Feel free to contact me</h1>
                     <div className="mobile-container flex justify-center items-center h-[50px] rounded-md shadow-[0_0_0_2px_var(--blurple)]">
                         <div className="icon w-[50px] h-[50px] flex items-center justify-center text-bgDark bg-blurple border-2 border-bgLight dark:border-bgDark rounded-md shadow-[0_0_0_2px_var(--blurple)]">

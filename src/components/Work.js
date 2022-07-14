@@ -13,7 +13,7 @@ function Work({ title, desc, Icon, link }) {
                 </div>
                 <div className="desc text-sm md:text-base space-y-4">
                     <div className="contextDesc break-all">
-                        Test ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel tincidunt eros. Etiam sit amet laoreet dui. Praesent molestie sem et nunc ultrices, et molestie nibh
+                        { desc }
                     </div>
                 </div>
                 <Link to = {link} className='text-blurple text-sm md:text-base absolute bottom-0 left-0 font-bold hover:text-darkBlurple transition ease-in-out delay-50'>Read More</Link>

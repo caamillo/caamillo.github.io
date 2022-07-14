@@ -6,7 +6,8 @@ module.exports = {
       sm: '480px',
       md: '800px',
       lg: '976px',
-      xl: '1440px'
+      xl: '1440px',
+      'tiny': { 'raw': '(max-height: 850px)' }
     },
     colors: {
       transparent: 'transparent',
