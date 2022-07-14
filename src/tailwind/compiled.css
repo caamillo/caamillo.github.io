@@ -691,6 +691,14 @@ video {
   height: 25px;
 }
 
+.h-\[calc\(100vh-60px-70px-1\.25rem\)\] {
+  height: calc(100vh - 60px - 70px - 1.25rem);
+}
+
+.h-\[calc\(100vh-60px-100px-1\.25rem\)\] {
+  height: calc(100vh - 60px - 100px - 1.25rem);
+}
+
 .w-\[50px\] {
   width: 50px;
 }

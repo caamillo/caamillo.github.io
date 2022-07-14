@@ -27,7 +27,17 @@ import getNight from '../utils/getNight'
 // Components
 import Work from '../components/Work'
 
+// Lang
+import works from '../lang/works.json'
+
 const maxParagraphLegth = 170
+
+const appIcons = [
+    React,
+    Nodejs,
+    Java,
+    Php
+]
 
 function Home({ goto }) {
     const [isNight, setIsNight] = useState(getNight())
@@ -103,10 +113,9 @@ function Home({ goto }) {
                 <h1 className='text-center text-3xl p-10'>Latest Works</h1>
                 <div className="wrapper flex flex-row justify-center">
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 space-y-3 md:space-y-0 child:w-[250px] child:h-[250px] child:md:w-[300px] child:md:h-[300px]">
-                        <Work title='Skinalette' Icon={ React } link="/works/skinalette" />
-                        <Work title="Dascanio Project" Icon={ Nodejs } link="/works/dascanio" />
-                        <Work title='Test Card Game' Icon={ Java } link="/works/testgame" />
-                        <Work title='Eccitamometro' Icon={ Php } link="/works/eccitamometro" />
+                        {
+                            Object.keys(works).map(x => <Work title={ works[x].title } desc={ works[x].desc.it } Icon={ appIcons[works[x].icon] } link={ '/works/' + works[x].page } key = { works[x].page } />)
+                        }
                     </div>
                 </div>
             </section>
