@@ -553,16 +553,16 @@ video {
   left: 0px;
 }
 
+.bottom-0 {
+  bottom: 0px;
+}
+
 .right-0 {
   right: 0px;
 }
 
 .bottom-\[25px\] {
   bottom: 25px;
-}
-
-.bottom-0 {
-  bottom: 0px;
 }
 
 .top-\[10px\] {
@@ -575,30 +575,6 @@ video {
 
 .top-\[60px\] {
   top: 60px;
-}
-
-.bottom-5 {
-  bottom: 1.25rem;
-}
-
-.bottom-10 {
-  bottom: 2.5rem;
-}
-
-.bottom-20 {
-  bottom: 5rem;
-}
-
-.bottom-\[20px\] {
-  bottom: 20px;
-}
-
-.bottom-\[50px\] {
-  bottom: 50px;
-}
-
-.bottom-\[70px\] {
-  bottom: 70px;
 }
 
 .z-0 {
@@ -624,16 +600,6 @@ video {
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
-}
-
-.mx-4 {
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
-.mx-3 {
-  margin-left: 0.75rem;
-  margin-right: 0.75rem;
 }
 
 .mx-2 {
@@ -717,16 +683,16 @@ video {
   height: 25px;
 }
 
-.w-\[100px\] {
-  width: 100px;
-}
-
 .w-\[50px\] {
   width: 50px;
 }
 
 .w-6 {
   width: 1.5rem;
+}
+
+.w-\[100px\] {
+  width: 100px;
 }
 
 .w-\[35px\] {
@@ -761,20 +727,8 @@ video {
   width: 300px;
 }
 
-.w-3 {
-  width: 0.75rem;
-}
-
 .w-4 {
   width: 1rem;
-}
-
-.w-7 {
-  width: 1.75rem;
-}
-
-.w-5 {
-  width: 1.25rem;
 }
 
 .max-w-xl {
@@ -906,10 +860,6 @@ video {
 
 .bg-menuLight {
   background-color: var(--menuLight);
-}
-
-.bg-darkBlurple {
-  background-color: var(--darkBlurple);
 }
 
 .p-2 {
@@ -1077,64 +1027,6 @@ video {
 
 .hover\:bg-menuLight:hover {
   background-color: var(--menuLight);
-}
-
-.hover\:bg-white:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-\[rgb\(0\2c 0\2c 0\)\]:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-\[rgb\(0\2c 0\2c 0\2c 100\)\]:hover {
-  background-color: rgb(0,0,0,100);
-}
-
-.hover\:bg-\[rgb\(0\2c 0\2c 0\2c 50\)\]:hover {
-  background-color: rgb(0,0,0,50);
-}
-
-.hover\:bg-\[rgb\(0\2c 0\2c 0\2c 30\)\]:hover {
-  background-color: rgb(0,0,0,30);
-}
-
-.hover\:bg-\[rgb\(0\2c 0\2c 0\2c 10\)\]:hover {
-  background-color: rgb(0,0,0,10);
-}
-
-.hover\:bg-\[rgba\(0\2c 0\2c 0\2c 10\)\]:hover {
-  background-color: rgba(0,0,0,10);
-}
-
-.hover\:bg-\[rgba\(0\2c 0\2c 0\2c 0\)\]:hover {
-  background-color: rgba(0,0,0,0);
-}
-
-.hover\:bg-\[rgba\(0\2c 0\2c 0\2c 0\.1\)\]:hover {
-  background-color: rgba(0,0,0,0.1);
-}
-
-.hover\:bg-\[rgba\(0\2c 0\2c 0\2c 0\.5\)\]:hover {
-  background-color: rgba(0,0,0,0.5);
-}
-
-.hover\:bg-\[rgba\(115\2c 108\2c 237\2c 0\.5\)\]:hover {
-  background-color: rgba(115,108,237,0.5);
-}
-
-.hover\:bg-\[rgba\(115\2c 108\2c 237\2c 0\.2\)\]:hover {
-  background-color: rgba(115,108,237,0.2);
-}
-
-.hover\:bg-\[rgba\(115\2c 108\2c 237\2c 0\.1\)\]:hover {
-  background-color: rgba(115,108,237,0.1);
-}
-
-.hover\:bg-\[rgba\(115\2c 108\2c 237\2c 0\.05\)\]:hover {
-  background-color: rgba(115,108,237,0.05);
 }
 
 .hover\:fill-black\/60:hover {

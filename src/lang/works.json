@@ -3,7 +3,7 @@
         "title" : "Skinalette",
         "langs" : "React, Tailwind",
         "desc" : {
-            "it" : "test-Ita",
+            "it" : "Skinalette è il mio primo vero progetto per testare le potenzialità di React, una libreria di Javascript creata da Facebook per gestire meglio il front-end. Lo scopo del sito è quello di rendersi utile in quanto strumento per Minecraft, un videogioco sandbox di cui ognuno può creare la propria “skin”, ovvero l’avatar. Lo strumento che ho creato serve essenzialmente per rimpiazzare i colori della skin con altri (anche se in realtà alla fine non rimpiazza il colore con un altro, ma lo rimpiazza con il colore dell’indirizzo di riferimento, il tutto senza utilizzare librerie esterne npm che rischiavano di appesantire la pagina). Il progetto inizialmente mi sembrava banale ma in realtà si è rivelato piuttosto difficile, anche perché non ho mai lavorato con le immagini in questo basso livello di programmazione (bitmap stream). Il mio sito è indirizzato a quelle persone che hanno una skin “semplice”, ovvero un avatar composto da una palette di colori piccola (esempio  5 o 6 colori), poiché altrimenti non farebbe tanta differenza. Concludo dicendo che mi sono veramente tanto divertito e alla fine sbattere la testa su quei flussi ne vale assolutamente la pena.",
             "en" : "test-Eng"
         },
         "link" : "https://github.com/caamillo/skinalette"
@@ -12,7 +12,7 @@
         "title" : "Dascanio Project",
         "langs" : "Nodejs, Mongodb, Sass",
         "desc" : {
-            "it" : "test-Ita",
+            "it" : "Dascanio Project è un progetto scolastico. E' stato realizzato per partecipare alla NAO Challenge, un concorso in cui sfruttando il robottino (NAO) e dove bisognava creare un contenuto multimediale da presentare poi alla giuria. il mio compito è stato creare il sito web. Mi sono adoperato in una settimana circa della programmazione di un blog che parlasse del progetto in tutti i suoi aspetti, dal lato puramente informatico alle varie ricerche effettuate. Corradino D’Ascanio, l’ingegnere abruzzese padre della vespa e del primo prototipo di elicottero, è stato il soggetto su cui abbiamo basato il tutto. Sfortunatamente non siamo passati per ragioni di tempo, ma comunque è stata davvero una bella esperienza.",
             "en" : "test-Eng"
         },
         "link" : "https://github.com/caamillo/dascanioproject"
@@ -21,7 +21,7 @@
         "title" : "Test Card Game",
         "langs" : "Java, Swing",
         "desc" : {
-            "it" : "test-Ita",
+            "it" : "Test Card Game è un videogioco che ho creato su java per la consegna di un compito della mia professoressa di informatica. Il progetto che ho realizzato consiste in un gioco di carte ispirato a Yu-Gi-Oh!, Hearthstone e Pokemon. Ho utilizzato una libreria grafica (Java Swing) che ho studiato in quel poco tempo, dato che la professoressa non era arrivata a questo argomento e ci ho familiarizzato dopo qualche giorno. Sfortunatamente non sapevo che su Eclipse si potesse scaricare una libreria che mi avrebbe favorito notevolmente col tempo, però alla fine sono soddisfatto del risultato, anche se graficamente è ancora incompleto (dato che non lo aggiorno da allora). Alla fine gestire il layout con questa libreria mi è sembrato più o meno come utilizzare CSS ed ho imparato davvero tante cose. Il Gioco è multiplayer e presenta un’architettura di rete piuttosto buona. Non è la prima volta che provo a creare qualcosa in multiplayer (in passato ho provato a creare un Lupus in Tabula su python), però è la prima volta che provo a farlo appunto su Java. La mia paura erano i thread e la gestione dei giocatori in delle waitroom / gameroom, ma alla fine non si è rivelato troppo complesso. Probabilmente un giorno o l’altro ci rimetterò mano e concluderò il lavoro.",
             "en" : "test-Eng"
         },
         "link" : "https://github.com/caamillo/giochetto"
@@ -30,7 +30,7 @@
         "title" : "Eccitamometro",
         "langs" : "PHP, Chartjs",
         "desc" : {
-            "it" : "test-Ita",
+            "it" : "Eccitamometro è un progetto nato per scherzo nel tentativo di imparare PHP, un linguaggio creato per la programmazione back-end. Devo dire che sorprendentemente ci ho familiarizzato subito e per un po’ è anche stato il mio linguaggio preferito. Il progetto in questione consiste in un “social” dove la gente quotidianamente può inserire per 5 volte in un range da 1 a 10  quant’è il suo livello di “eccitazione”. Al momento non posso inserire il collegamento per visualizzare la repo perchè deve essere ancora lievemente aggiustata dato che ho ancora tutto in locale e dovrei trasformare tutto il progetto in un sito statico per far visualizzare come funziona.",
             "en" : "test-Eng"
         }
     },
