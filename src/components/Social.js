@@ -18,8 +18,8 @@ function Social() {
     
     return (
         <div className="social-container relative">
-            <div className="social-media-icons absolute left-0 right-0 mx-auto bottom-[25px] w-[100px]">
-                <div className="socials flex items-center justify-center child:w-[40px] space-x-3">
+            <div className="social-media-icons mx-auto bottom-0 w-[100px]">
+                <div className="socials flex items-center justify-center child:w-[40px] h-[70px] mt-12 md:mt-5 space-x-3">
                     <a href='https://www.instagram.com/caaamillo/'>
                         <Instagram className='dark:hover:fill-white/60 hover:fill-black/60 transition ease-in-out delay-50' fill = { isNight ? '#fff' : '#000' }/>
                     </a>

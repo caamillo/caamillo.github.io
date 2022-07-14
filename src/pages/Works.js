@@ -13,7 +13,7 @@ function Works() {
     const workname = location.pathname.slice(location.pathname.lastIndexOf("/") + 1, location.pathname.length)
 
     return (
-        <div className="wrapper h-[130vh] md:h-[calc(100vh-120px)] flex items-center flex-col">
+        <div className="wrapper h-full md:h-[calc(100vh-120px-70px-1.25rem)] flex items-center flex-col">
             <div className="card-work text-center flex flex-col justify-center items-center">
                 <div className='card-title m-8'>
                     <h1 className='text-4xl md:text-6xl'>{ works[workname]['title'] }</h1>
