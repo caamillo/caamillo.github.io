@@ -683,6 +683,66 @@ video {
   height: 25px;
 }
 
+.h-\[calc\(100vh-40px\)\] {
+  height: calc(100vh - 40px);
+}
+
+.h-\[calc\(100vh\)\] {
+  height: calc(100vh);
+}
+
+.h-\[calc\(100vh\+1000px\)\] {
+  height: calc(100vh + 1000px);
+}
+
+.h-\[calc\(100vh\+100px\)\] {
+  height: calc(100vh + 100px);
+}
+
+.h-\[calc\(100vh\+110px\)\] {
+  height: calc(100vh + 110px);
+}
+
+.h-\[calc\(100vh\+130px\)\] {
+  height: calc(100vh + 130px);
+}
+
+.h-\[calc\(100vh\+150px\)\] {
+  height: calc(100vh + 150px);
+}
+
+.h-\[calc\(100vh\+200px\)\] {
+  height: calc(100vh + 200px);
+}
+
+.h-\[calc\(120vh\)\] {
+  height: calc(120vh);
+}
+
+.h-\[calc\(130vh\)\] {
+  height: calc(130vh);
+}
+
+.h-\[130vh\] {
+  height: 130vh;
+}
+
+.h-\[130\%\] {
+  height: 130%;
+}
+
+.h-\[150\%\] {
+  height: 150%;
+}
+
+.h-\[20\%\] {
+  height: 20%;
+}
+
+.h-\[200\%\] {
+  height: 200%;
+}
+
 .w-\[50px\] {
   width: 50px;
 }
@@ -928,6 +988,11 @@ video {
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .font-bold {
