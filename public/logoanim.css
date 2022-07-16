@@ -1,0 +1,70 @@
+#camillo {
+    opacity: 0;
+    animation: logoanim 4s ease;
+}
+
+#camillo::after {
+    content: "Portfolio";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-weight: 100;
+    opacity: 0;
+    animation: logoanim2 4s ease;
+    animation-delay: 250ms;
+}
+
+#logoAnim {
+    opacity: 1;
+    animation: fadeWall 1s ease;
+    animation-delay: 4s;
+}
+
+@keyframes logoanim {
+    from {
+        transform: scale(50%);
+        opacity: 0;
+    }
+    25% {
+        transform: scale(100%);
+        transform: translateX(0);
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+        transform: translateX(-57%);
+    }
+    85% {
+        opacity: 1;
+        transform: translateX(-57%);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(-57%);
+    }
+}
+@keyframes logoanim2 {
+    25% {
+        transform: translateX(0);
+    }
+    40% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+        transform: translateX(95%);
+    }
+    85% {
+        opacity: 1;
+        transform: translateX(95%);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(95%);
+    }
+}
+@keyframes fadeWall {
+    to {
+        opacity: 0;
+    }
+}
