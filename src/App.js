@@ -7,14 +7,15 @@ import Navbar from './components/Navbar/Navbar'
 // Pages
 import Home from './pages/Home';
 import Works from './pages/Works';
+import Language from './pages/Language';
 import NotFound from './pages/NotFound';
 
 function App() {
-
     return (
         <HashRouter>
             <Navbar/>
             <Routes>
+                <Route path="/" element = { <Language /> } />
                 <Route path="/" element = { <Home /> } />
 
                 <Route path="home" element = { <Home  goto = { 'home' } /> } />
@@ -25,6 +26,8 @@ function App() {
                 <Route path="works/dascanio" element = { <Works /> } />
                 <Route path="works/testgame" element = { <Works /> } />
                 <Route path="works/eccitamometro" element = { <Works /> } />
+
+                <Route path="/language" element = { <Language /> } />
 
                 <Route path="*" element = { <NotFound /> } />
             </Routes>
